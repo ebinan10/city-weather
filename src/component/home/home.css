@@ -104,7 +104,7 @@
   }
   .label h1{
     color: rgb(24, 9, 105);
-    font-size: 24px;
+    font-size: 35px;
   }
   .label input[type=text]{
   padding-left: 10px;
@@ -115,7 +115,7 @@
     font-size: 20px;
     color: rgb(9, 9, 167);
   }
-  .label input[type=text]:focus{
+  .label input[type=text]:active{
     color: rgb(9, 9, 167);
   }
   .label button{
