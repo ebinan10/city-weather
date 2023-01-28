@@ -5,7 +5,6 @@ import Home from '././component/home/Home';
 import Signup from '././component/signup/Signup';
 import Login from '././component/login/Login';
 import Nav from './component/nav/Nav'
-import Protected from './component/protected/ProtectedRoute';
 import Footer from './component/footer/Footer';
 import Contact from './component/contact/Contact';
 import About from './component/about/About';
@@ -18,7 +17,7 @@ const Rout = () => {
         <Router>
           <Header/>
           <Nav/>
-            <Routes>
+            <Routes> 
               
                 <Route path='/' element={<Home/>} />
                 <Route path='signup' element={<Signup/>}/>
@@ -26,9 +25,7 @@ const Rout = () => {
                 <Route path='contact' element={<Contact/>}/>
                 
                 <Route path='about' element={<About/>}/>
-                <Route path='component5' element={<Protected>
-                  
-                  </Protected>}/>
+               
             </Routes>
         </Router>
         <Footer/>
