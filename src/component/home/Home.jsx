@@ -58,20 +58,17 @@ const WeatherApi = () => {
    
    useEffect(() => {
     setTimeout(() => {
-      console.log(icon)
-      console.log(country)
+      
       const countryFlag = response.status ?country.toLowerCase():''
-      console.log(countryFlag)
      const imageIcon = response.status ?`http://openweathermap.org/img/w/${icon}.png`:'' ;
      const imgSr = response.status ?`https://flagcdn.com/16x12/${countryFlag}.png`:'';
      
      setIcon(imageIcon)
      setImgscr(imgSr)
-     console.log(imageIcon)
       setName(cityname.toUpperCase())
    }, 434);  
      
-   }, [info])
+   }, [info,cityname,country,icon,response.status])
 
    
    
