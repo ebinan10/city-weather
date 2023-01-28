@@ -15,32 +15,6 @@ const Footer = () => {
     <div className='footer'>
       <div className="footerContainer">
         <div className="footerContent">
-          <ul className='ul'>
-            <h3 className='li'>Support</h3>
-            <li className='li'>After Sales</li>
-            <li className='li'>Damages</li>
-            <li className='li'>Complains</li>
-            <li className='li'>Customer Care</li>
-        </ul>
-        <ul className='ul'>
-          <h3 className='li'>Company Name</h3>
-          <li className='li'>Explore</li>
-          <li className='li'>App Developers</li>
-          <li className='li'></li>
-        </ul>
-        <ul className='ul'>
-          <h3 className='li'>Product Category</h3>
-          <li className='li'>first</li>
-          <li className='li'>second</li>
-          <li className='li'>third</li>
-        </ul>
-        <ul className='ul'>
-        <h3 className='li'>Content</h3>
-          <li className='li'>Email Address</li>
-          <li className='li'>Phone Number</li>
-          <li className='li'>Physical Address</li>
-          <li className='li'>Content Page</li>
-        </ul>
         </div>
         <div className="footerItem">
         <a href="www.twitter.com/ebinan10"><img src={Twitter} alt="" to></img></a>

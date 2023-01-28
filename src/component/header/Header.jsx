@@ -62,46 +62,13 @@ const Header = () => {
   return (
     <div className='header'>
         <div className="headerContainer">
-            <h2 className="headerName">Brand Name</h2>
+            <h2 className="headerName">City Weather</h2>
+            <img src="http://openweathermap.org/img/w/03n.png" alt="" />
             <div className="headerItem">
                     
                     {lang}<FontAwesomeIcon icon={faCaretDown} onClick={changeStyle}/>
-                    <ul className={classname}> 
-                        
-        <li  className='lang' onClick={(e)=>Lang(e,'english')}>EN</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'deutch')}>DE</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'english')}>NL</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'french')}>FR</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'italian')}>IT</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'spanish')}>ES</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'poland')}>PL</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'potugees')}>PT</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'english')}>TR</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'english')}>RU</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'hungarian')}>HU</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'english')}>CS</li>
-        <li  className='lang' onClick={(e)=>Lang(e,'english')}>SV</li>
-                    </ul>
+                    
             </div>
-            <ul className="HeaderItemLi">
-              <li className="lilink"><div className={block1}>Signup</div>
-              <Link to="/signup" className='headerLink'>
-                <FontAwesomeIcon icon={faUserPlus} className='iconNav'
-                 onMouseEnter={changePaternSignup} />
-              </Link>
-             </li>
-              <li className="lilink">
-              <Link to="/login" className='headerLink'>
-                <div className={block2}>Signin</div>
-              <FontAwesomeIcon icon={faRightToBracket} className='iconNav'
-              onMouseEnter={changePatern} >
-              <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
-              </FontAwesomeIcon>
-              </Link>
-              
-             
-              </li>
-             </ul>
         </div>
     </div>
   )

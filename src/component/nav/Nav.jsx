@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div className='nav'>
         <div className="navContainer">
-            <span className="title">Component</span>
+           
             <ul className="navItem"> 
              <li className='li'>
               <Link to="/">Home</Link>
@@ -22,12 +22,7 @@ const Nav = () => {
               <Link to="/about">About</Link>
               <FontAwesomeIcon icon={faQuestion}  className='iconNav'/>
               </li>       
-             <li className='li'>
-              <Link to="/component1">Component1</Link>
-              </li>      
-             <li className='li'>
-              <Link to="/component2">Component2</Link>
-              </li>      
+                   
             </ul>
              
 

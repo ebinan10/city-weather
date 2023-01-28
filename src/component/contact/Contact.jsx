@@ -37,16 +37,10 @@ const Contact = () => {
                 </div>
                 <div className='contat'>
                     Physical Address
-                    <p className='contactPar'>No 12, Diamond street Agric Ikorodu Lagos</p>
+                    <p className='contactPar'>No 8b, Osholonge street Agric Ikorodu Lagos</p>
                 </div>
             </div>
-            <div className="contat">
-                <form action="" className="form">
-                    <textarea className='textarea' placeholder='Message Us' onChange={(e)=>{EnterInput(e,'message')}} value={message}/>
-                    <input type="email" placeholder='Email' className='input' onChange={(e)=>{EnterInput(e,'input')}} value={input}/>
-                    <button className='btn' onClick={Submit}>Submit</button>
-                </form>
-            </div>
+            
         </div>
     </div>
   )

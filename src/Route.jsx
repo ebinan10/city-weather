@@ -40,7 +40,7 @@ const Rout = () => {
                   <Component5/>
                   </Protected>}/>
             </Routes>
-            <Mailer/>
+            {/* <Mailer/> */}
         </Router>
         <Footer/>
     </div>

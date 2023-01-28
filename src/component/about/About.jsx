@@ -3,17 +3,18 @@ import './about.css'
 
 const About = () => {
   return (
-    <div className='about'>
-        <div className="aboutContainer">
-            <div className="aboutItem">
-                <p className='aboutPar'> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Pariatur non reprehenderit porro fugiat error distinctio
-                 quas alias molestiae, officiis corrupti saepe possimus 
-                sunt iste natus eum voluptatibus vitae deleniti in.
-            </p>
-            </div>
+<div className='about'>
+    <div className="aboutContainer">
+      <div className="aboutItem">
+          <p className='aboutPar'> 
+            City weather app is an application that is built using react
+             platform, and is used to check the weather of any given city,
+              by inputing the city name a detial including the weather of 
+              the city and the data would be fetched.
+        </p>
         </div>
     </div>
+</div>
   )
 }
 
