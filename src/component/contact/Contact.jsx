@@ -1,23 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './contact.css'
-import axios from 'axios';
 
 const Contact = () => {
-    const [message, setMessage] = useState('');
-    const [input, setInput]= useState('');
-    const Submit =() =>{
-            axios.post({message,input})
-    }
-    const EnterInput = (e,value) =>{
-        if(value==='message'){
-            setMessage(e.target.value)
-            console.log(message)
-        }
-        else{
-            setInput(e.target.value)
-            console.log(input)
-        }
-    }
+    
   return (
     <div className='contact'>
         <div className="contactContainer">

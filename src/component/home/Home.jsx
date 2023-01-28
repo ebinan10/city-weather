@@ -1,26 +1,20 @@
 import axios from 'axios';
 import React, { useState,useEffect } from 'react'
-// import MetaTags from 'react-meta-tags';
 import './home.css'
 
 const WeatherApi = () => {
   const [response,setResponse] = useState({})
-    const [data, setData]= useState("");
     const [info, setInfo]= useState(false)
     const [ arr, setArr] = useState([])
     const [cityname, setCityname] = useState('')
     const [name, setName] = useState('')
     const [country, setCountry] = useState("")
-    const [temp, setTemp] = useState('')
     const [tempCent, setTempCent] = useState(null)
-    const [coordLong, setCoordLong] = useState(0)
-    const [coordLat, setCoordLat] = useState(0)
     const [weatherInfo, setWeatherInfo] = useState('')
     const [description, setDescription]= useState('')
     const [icon,setIcon]= useState('')
     const [error,setError]= useState('')
     const [degree,setDegree]= useState('')
-    const [iconImg,setIconImg]= useState('')
     const [imgsrc,setImgscr]= useState('')
 
     const homeBtn=()=>{
@@ -38,12 +32,6 @@ const WeatherApi = () => {
       
       
   }
-
-     const getCityName=(e)=>{
-       
-            setCityname(e.target.value)
-    
-        }
   
     
      const apI=async()=>{
@@ -57,7 +45,6 @@ const WeatherApi = () => {
               setResponse(response)
               setArr([data])
               setIcon(data.weather[0].icon)
-              setTemp(data.main.temp)
               setCountry(data.sys.country)
               setDescription(data.weather[0].description)
               setWeatherInfo(data.weather[0].main)
@@ -68,7 +55,7 @@ const WeatherApi = () => {
     
      
    }
-   const Image=()=>[] 
+   
    useEffect(() => {
     setTimeout(() => {
       console.log(icon)
@@ -82,14 +69,14 @@ const WeatherApi = () => {
      setImgscr(imgSr)
      console.log(imageIcon)
       setName(cityname.toUpperCase())
-   }, 434); 
+   }, 434);  
      
    }, [info])
+
+   
    
   return (<div>
-    {/* <MetaTags>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
-</MetaTags> */}
+   
     {
     info===true?
         <div className ='weather'>
