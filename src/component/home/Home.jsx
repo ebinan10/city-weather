@@ -61,8 +61,8 @@ const WeatherApi = () => {
     setTimeout(() => {
       
       const countryFlag = response.status ?country.toLowerCase():''
-     const imgSr = response.status ?`https://flagcdn.com/16x12/${countryFlag}.png`:'';
-     const ico = response.status ? `https://openweathermap.org/img/wn/${icon}@2x.png`:'';
+     const imgSr = response.status ?`http://flagcdn.com/16x12/${countryFlag}.png`:'';
+     const ico = response.status ? `http://openweathermap.org/img/wn/${icon}@2x.png`:'';
      setImgscr(imgSr)
       setName(cityname.toUpperCase())
      return response.status ?setIconImg(ico):'' ;
