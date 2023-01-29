@@ -40,9 +40,7 @@ const WeatherApi = () => {
       
       const ApiKey = 'd5f31baa758a56b76ded08d7267e3ab1'
       const response = await axios.get(baseUrl + `q=${cityname}&appid=${ApiKey}`)
-      console.log(response.status)
       const {data} = response
-      console.log(data.sys.country) 
               setResponse(response)
               setArr([data])
               setIcon(data.weather[0].icon)
@@ -52,7 +50,6 @@ const WeatherApi = () => {
               setTempCent(Math.round(((data.main.temp-273.15) + Number.EPSILON) * 10) / 10)
               setDegree(<>&deg;C</>)
               setError('')
-      console.log(data);
     
      
    }
