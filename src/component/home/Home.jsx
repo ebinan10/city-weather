@@ -13,6 +13,7 @@ const WeatherApi = () => {
     const [weatherInfo, setWeatherInfo] = useState('')
     const [description, setDescription]= useState('')
     const [icon,setIcon]= useState('')
+    const [iconImg,setIconImg]= useState('')
     const [error,setError]= useState('')
     const [degree,setDegree]= useState('')
     const [imgsrc,setImgscr]= useState('')
@@ -60,13 +61,12 @@ const WeatherApi = () => {
     setTimeout(() => {
       
       const countryFlag = response.status ?country.toLowerCase():''
-     const imageIcon = response.status ?`http://openweathermap.org/img/w/${icon}.png`:'' ;
      const imgSr = response.status ?`https://flagcdn.com/16x12/${countryFlag}.png`:'';
-     
-     setIcon(imageIcon)
+     const ico = response.status ? `http://openweathermap.org/img/wn/${icon}@2x.png`:'';
      setImgscr(imgSr)
       setName(cityname.toUpperCase())
-   }, 434);  
+     return response.status ?setIconImg(ico):'' ;
+   }, 1834);    
      
    }, [info,cityname,country,icon,response.status])
 
@@ -90,7 +90,7 @@ const WeatherApi = () => {
 
        
 </div>  
-       <div className ='image'>   <img src = {icon} alt=''/></div>
+       <div className ='image'>   <img src = {iconImg} alt=''/></div>
 </div>
 <div className='temperature'>
       <h3> {weatherInfo} </h3>     <h3> {description}</h3>
